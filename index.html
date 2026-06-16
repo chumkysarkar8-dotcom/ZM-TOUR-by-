@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZM TOUR ZONE - Free Fire Tournament App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gamerYellow: '#FFD200',
+                        gamerDark: '#0A0A0A',
+                        gamerCard: '#141414',
+                        gamerBorder: '#222222'
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 1.8s infinite',
+                        'float': 'floatAnim 2.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 15px #FFD200' },
+                            '50%': { transform: 'scale(1.02)', boxShadow: '0 0 30px #FFD200' },
+                        },
+                        floatAnim: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #0A0A0A;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FFD200;
+            border-radius: 10px;
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255, 210, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="max-w-md mx-auto relative min-h-screen border-x border-gamerBorder bg-gamerDark pb-12">
+
+    <header class="bg-gamerDark/90 backdrop-blur-md border-b border-gamerBorder p-4 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-gamerYellow text-gamerDark rounded-xl flex items-center justify-center font-black text-xl font-orbitron shadow-lg shadow-gamerYellow/30 animate-float">
+                ZMZ
+            </div>
+            <div>
+                <h1 class="text-white font-black text-md tracking-wider font-orbitron glow-text">ZM TOUR ZONE</h1>
+                <p class="text-[10px] text-gamerYellow flex items-center font-bold">
+                    <span class="w-2 h-2 bg-green-500 rounded-full inline-block mr-1.5 animate-ping"></span>
+                    No.1 Free Fire Tournament Platform
+                </p>
+            </div>
+        </div>
+        <div class="animate-pulse">
+            <span class="bg-gamerYellow/10 text-gamerYellow border border-gamerYellow/40 text-[10px] font-bold px-2 py-1 rounded">100% FAIR</span>
+        </div>
+    </header>
+
+    <div class="p-4 space-y-6">
+        
+        <div class="relative bg-gradient-to-b from-neutral-900 via-gamerCard to-gamerDark border border-gamerBorder rounded-2xl p-6 overflow-hidden shadow-2xl text-center space-y-4">
+            <div class="absolute -left-16 -top-16 w-36 h-36 bg-gamerYellow/10 rounded-full blur-3xl"></div>
+            <div class="absolute -right-16 -bottom-16 w-36 h-36 bg-gamerYellow/5 rounded-full blur-3xl"></div>
+            
+            <div class="space-y-2 relative z-10">
+                <span class="bg-red-600 text-white text-[9px] font-black px-2.5 py-0.5 rounded tracking-widest uppercase">New Update</span>
+                <h2 class="text-2xl font-black text-white tracking-tight leading-tight">মোবাইল দিয়ে ফ্রি ফায়ার খেলুন <br><span class="text-gamerYellow font-orbitron">টাকা ইনকাম</span> করুন!</h2>
+                <p class="text-xs text-neutral-400 max-w-xs mx-auto">আমাদের অফিশিয়াল অ্যাপে কম খরচে বড় ধামাকা প্রাইজপুল পান। সরাসরি ক্রোমে ডাউনলোড করতে নিচের বাটনে চাপুন।</p>
+            </div>
+
+            <div class="pt-2 pb-1 relative z-10">
+                <a href="ZM TOURR ZONE.apk" download="ZM TOURR ZONE.apk" class="inline-flex items-center justify-center space-x-3 w-full bg-gamerYellow text-gamerDark font-black text-sm px-6 py-4 rounded-xl transition-all duration-300 shadow-xl shadow-gamerYellow/20 animate-pulse-glow">
+                    <i class="fa-solid fa-download text-base"></i>
+                    <span>ডাউনলোড করুন (ZM APK)</span>
+                </a>
+                <div class="flex items-center justify-center space-x-4 mt-3 text-[11px] text-neutral-400 font-semibold">
+                    <span><i class="fa-solid fa-shield text-green-500 mr-1"></i> অ্যান্টি-ব্যান</span>
+                    <span><i class="fa-solid fa-bolt text-gamerYellow mr-1"></i> ইনস্ট্যান্ট উইথড্র</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gamerCard border border-gamerBorder p-3 rounded-xl flex items-center space-x-3">
+            <div class="text-gamerYellow animate-pulse"><i class="fa-solid fa-bullhorn text-sm"></i></div>
+            <marquee class="text-xs text-neutral-300 font-medium" scrollamount="4">🔥 প্রতিটি ম্যাচে থাকছে হিউজ প্রাইজপুল! হ্যাকারদের কোনো স্থান নেই। সম্পূর্ণ সেফ এবং ফেয়ার অ্যাপ ZM TOUR ZONE।</marquee>
+        </div>
+
+        <div class="space-y-4">
+            <div class="flex items-center justify-between border-l-4 border-gamerYellow pl-2">
+                <h3 class="font-black text-sm text-white flex items-center space-x-2 tracking-wide">
+                    <span class="w-1.5 h-4 bg-gamerYellow rounded-sm block"></span>
+                    <span>আজকের ধামাকা টুর্নামেন্ট সমূহ</span>
+                </h3>
+                <span class="text-[10px] bg-neutral-800 border border-gamerBorder px-2 py-0.5 rounded text-neutral-400 font-orbitron">Daily 20+ Matches</span>
+            </div>
+
+            <div class="bg-gamerCard border-2 border-gamerBorder rounded-xl overflow-hidden p-4 space-y-4 hover:border-gamerYellow/40 transition-all duration-300 relative group">
+                <div class="absolute top-0 right-0 bg-red-600 text-white font-bold text-[9px] px-3 py-0.5 rounded-bl uppercase tracking-wider animate-pulse">হট ম্যাচ</div>
+                
+                <div class="flex justify-between items-start">
+                    <div class="space-y-1">
+                        <h4 class="font-bold text-white text-md group-hover:text-gamerYellow transition-colors flex items-center">
+                            <i class="fa-solid fa-crosshairs text-gamerYellow mr-1.5 text-xs"></i> ফ্রি ফায়ার স্কোয়াড ধামাকা
+                        </h4>
+                        <p class="text-[11px] text-neutral-400">ম্যাচ আইডি: <span class="text-white font-orbitron">#ZM-204</span> | ম্যাপ: <span class="text-gamerYellow">বারমুডা</span></p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-2 py-2 text-center bg-black/60 rounded-xl border border-gamerBorder/60 p-2">
+                    <div>
+                        <p class="text-[9px] text-neutral-500 font-bold uppercase">মোট প্রাইজপুল</p>
+                        <p class="text-sm font-black text-green-400 font-orbitron">৳ ৫,০০০</p>
+                    </div>
+                    <div>
+                        <p class="text-[9px] text-neutral-500 font-bold uppercase">প্রতি কিল (Per Kill)</p>
+                        <p class="text-sm font-black text-gamerYellow font-orbitron">৳ ৭</p>
+                    </div>
+                    <div>
+                        <p class="text-[9px] text-neutral-500 font-bold uppercase">এন্ট্রি ফি (Entry)</p>
+                        <p class="text-xs font-black text-white bg-neutral-800 px-1 py-0.5 rounded inline-block font-orbitron">৳ ১০</p>
+                    </div>
+                </div>
+
+                <div class="space-y-1.5">
+                    <div class="flex justify-between items-center text-[11px]">
+                        <span class="text-neutral-400">স্লট বুকিং প্রায় শেষ</span>
+                        <span class="text-gamerYellow font-bold font-orbitron">41/48 Joined</span>
+                    </div>
+                    <div class="w-full bg-neutral-900 h-2 rounded-full overflow-hidden p-[1px] border border-gamerBorder">
+                        <div class="bg-gradient-to-r from-gamerYellow to-amber-500 h-full w-[85%] rounded-full"></div>
+                    </div>
+                </div>
+
+                <a href="ZM TOURR ZONE.apk" download="ZM TOURR ZONE.apk" class="block w-full text-center bg-white text-gamerDark hover:bg-gamerYellow font-black text-xs py-3 rounded-lg transition-all shadow-md">জয়েন করতে অ্যাপ ডাউনলোড করুন</a>
+            </div>
+
+            <div class="bg-gamerCard border border-gamerBorder rounded-xl overflow-hidden p-4 space-y-4 hover:border-gamerYellow/30 transition-all duration-300 relative group">
+                <div class="absolute top-0 right-0 bg-neutral-800 text-neutral-400 font-bold text-[9px] px-3 py-0.5 rounded-bl uppercase tracking-wider">সোলো স্পেশাল</div>
+                
+                <div class="flex justify-between items-start">
+                    <div class="space-y-1">
+                        <h4 class="font-bold text-white text-md group-hover:text-gamerYellow transition-colors flex items-center">
+                            <i class="fa-solid fa-skull text-gamerYellow mr-1.5 text-xs"></i> সোলো ক্লাসিক রাশ আওয়ার
+                        </h4>
+                        <p class="text-[11px] text-neutral-400">ম্যাচ আইডি: <span class="text-white font-orbitron">#ZM-205</span> | ম্যাপ: <span class="text-gamerYellow">পার্গেটরি</span></p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-2 py-2 text-center bg-black/60 rounded-xl border border-gamerBorder/60 p-2">
+                    <div>
+                        <p class="text-[9px] text-neutral-500 font-bold uppercase">মোট প্রাইজপুল</p>
+                        <p class="text-sm font-black text-green-400 font-orbitron">৳ ১,৫০০</p>
+                    </div>
+                    <div>
+                        <p class="text-[9px] text-neutral-500 font-bold uppercase">প্রতি কিল (Per Kill)</p>
+                        <p class="text-sm font-black text-gamerYellow font-orbitron">৳ 7</p>
+                    </div>
+                    <div>
+                        <p class="text-[9px] text-neutral-500 font-bold uppercase">এন্ট্রি ফি (Entry)</p>
+                        <p class="text-xs font-black text-white bg-neutral-800 px-1 py-0.5 rounded inline-block font-orbitron">৳ ১০</p>
+                    </div>
+                </div>
+
+                <div class="space-y-1.5">
+                    <div class="flex justify-between items-center text-[11px]">
+                        <span class="text-neutral-400">স্লট বুকিং চলছে</span>
+                        <span class="text-white font-bold font-orbitron">14/50 Joined</span>
+                    </div>
+                    <div class="w-full bg-neutral-900 h-2 rounded-full overflow-hidden p-[1px] border border-gamerBorder">
+                        <div class="bg-gamerYellow h-full w-[28%] rounded-full"></div>
+                    </div>
+                </div>
+
+                <a href="ZM TOURR ZONE.apk" download="ZM TOURR ZONE.apk" class="block w-full text-center bg-neutral-800 text-white hover:bg-gamerYellow hover:text-gamerDark font-black text-xs py-3 rounded-lg transition-all border border-gamerBorder">জয়েন করতে অ্যাপ ডাউনলোড করুন</a>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <div class="border-l-4 border-gamerYellow pl-2">
+                <h3 class="font-black text-sm text-white tracking-wide">আমাদের গেম মোড সমূহ</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-gamerCard border border-gamerBorder p-3 rounded-xl flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-lg bg-gamerYellow/10 flex items-center justify-center text-gamerYellow font-bold font-orbitron text-xs">BR</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">ব্যাটল রয়্যাল</h4>
+                        <p class="text-[10px] text-neutral-500">ফুল ম্যাপ ক্লাসিক</p>
+                    </div>
+                </div>
+                <div class="bg-gamerCard border border-gamerBorder p-3 rounded-xl flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white font-bold font-orbitron text-xs">CS</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">ক্ল্যাশ স্কোয়াড</h4>
+                        <p class="text-[10px] text-neutral-500">৪ বনাম ৪ লড়াই</p>
+                    </div>
+                </div>
+                <div class="bg-gamerCard border border-gamerBorder p-3 rounded-xl flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white font-bold font-orbitron text-[10px]">WOLF</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">লোন উলফ মোড</h4>
+                        <p class="text-[10px] text-neutral-500">১ বনাম ১ ম্যাচ</p>
+                    </div>
+                </div>
+                <div class="bg-gamerCard border border-gamerBorder p-3 rounded-xl flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-lg bg-gamerYellow/10 flex items-center justify-center text-gamerYellow font-bold font-orbitron text-[9px]">L2W</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">লস টু উইন</h4>
+                        <p class="text-[10px] text-neutral-500">লোন উলফ স্পেশাল</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-gamerCard to-neutral-900 border border-gamerBorder rounded-2xl p-5 space-y-3.5">
+            <h3 class="font-black text-sm text-gamerYellow flex items-center">
+                <i class="fa-solid fa-circle-info mr-2"></i> আমাদের অ্যাপ সম্পর্কে (About App)
+            </h3>
+            <p class="text-xs text-neutral-300 leading-relaxed">
+                <span class="text-white font-bold">ZM TOUR ZONE</span> হচ্ছে সম্পূর্ণ একটি <span class="text-gamerYellow font-bold">ফেয়ার অ্যাপ (100% Fair E-Sports Platform)</span>। এখানে কোনো ধরনের হ্যাকিং, স্ক্রিপ্টিং বা ইলিগাল এক্টিভিটি প্রশ্রয় দেওয়া হয় না। আমাদের ডেডিকেটেড মডারেটর প্যানেল প্রতিটা ম্যাচ কড়া নজরদারিতে রাখে।
+            </p>
+            <div class="space-y-2 pt-1 border-t border-gamerBorder/60 text-xs">
+                <div class="flex items-start space-x-2.5">
+                    <i class="fa-solid fa-circle-check text-green-500 mt-0.5 text-[10px]"></i>
+                    <p class="text-neutral-400"><b class="text-white">সবচেয়ে বেশি ম্যাচ:</b> আমাদের এখানে প্রতিদিন সকাল থেকে রাত পর্যন্ত ব্যাক-টু-ব্যাক প্রচুর পরিমাণে কাস্টম ম্যাচ রানিং থাকে, যাতে কোনো ইউজারকে বসে থাকতে না হয়।</p>
+                </div>
+                <div class="flex items-start space-x-2.5">
+                    <i class="fa-solid fa-circle-check text-green-500 mt-0.5 text-[10px]"></i>
+                    <p class="text-neutral-400"><b class="text-white">মোডের ভিন্নতা:</b> আপনার পছন্দমতো বিআর (BR), ক্ল্যাশ স্কোয়াড (CS), লোন উলফ (Lone Wolf) কিংবা লোন উলফ লস টু উইন কাস্টম রুমে সহজেই স্লট বুক করতে পারবেন।</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center pt-2 space-y-1">
+            <p class="text-[11px] text-neutral-600 font-orbitron">&copy; 2026 ZM TOUR ZONE. All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
